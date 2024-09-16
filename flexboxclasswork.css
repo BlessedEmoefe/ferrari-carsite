@@ -1,0 +1,227 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  font-family: "Inter", sans-serif;
+}
+
+body {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+body .container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: max-content;
+  background-color: #eeebeb;
+}
+
+body .container .navbar {
+  width: 100%;
+  padding: 1rem 2rem;
+  height: max-content;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ef1a2d;
+
+  @media only screen and (max-width: 1000px) {
+    flex-direction: column;
+    gap: 2rem;
+    padding: 1rem 1rem;
+  }
+}
+
+body .container .navbar .logoSection {
+  width: max-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body .container .navbar .logoSection .logo {
+  width: 3rem;
+  height: auto;
+}
+
+body .container .navbar .linkSection {
+  height: max-content;
+  width: 80%;
+
+  @media only screen and (max-width: 1000px) {
+    flex-direction: column;
+    width: 100%;
+  }
+}
+
+body .container .navbar .linkSection .innerContainer {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+  margin:0;
+  padding:0;
+
+   @media only screen and (max-width: 1000px) {
+   justify-content: space-between;
+   gap:1rem;
+   flex-wrap: wrap;
+  }
+}
+
+body .container .navbar .linkSection .innerContainer li a:link,
+body .container .navbar .linkSection .innerContainer li a:visited {
+  font-size: 18px;
+  color: white;
+  text-decoration: none;
+}
+
+body .container .navbar .linkSection .innerContainer li a:hover {
+  font-size: 18px;
+  color: #fff200;
+  text-decoration: underline;
+}
+
+body .container .content {
+  width: 100%;
+  height: max-content;
+  padding: 1rem 2rem;
+   @media only screen and (max-width: 1000px) {
+   
+    padding: 1rem;
+  }
+}
+
+body .container .content .page {
+  width: 100%;
+  background-color: transparent;
+}
+body .container .content .page .carCollection {
+  width: 100%;
+  padding-top: 10px;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 2rem;
+   @media only screen and (max-width: 1000px) {
+   
+    gap: 1rem;
+  }
+}
+
+body .container .content .page .carCollection .card {
+  width: 28%;
+  min-width: 300px;
+  border: 1px solid transparent;
+  background-color: white;
+  padding: 1rem;
+  gap: 1rem;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* justify-content: center; */
+  overflow: hidden;
+  box-shadow: 0px 10px 15px 4px rgba(0, 0, 0, 0.1);
+   @media only screen and (max-width: 1000px) {
+   width:45%;
+  }
+   @media only screen and (max-width: 650px) {
+   width:100%;
+  }
+}
+body .container .content .page .carCollection .card img {
+  height: 40vh;
+  width: 100%;
+  object-fit: cover;
+}
+body .container .content .page .carCollection .card .paragraph {
+  font-size: 14px;
+  /* height: 100px; */
+  width: 100%;
+}
+
+body .footer {
+  width: 100%;
+  padding: 1rem 2rem;
+  height: max-content;
+  margin-top: 3vh;
+  background-color: #b80312;
+  display: flex;
+  justify-content: space-between;
+
+  @media only screen and (max-width: 1000px) {
+    flex-direction: column;
+    gap: 3rem;
+  }
+}
+
+body .footer .bottom {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: flex-start;
+   @media only screen and (max-width: 1000px) {
+    width:100%;
+  align-items: center;
+  }
+}
+
+body .footer .footer1 p {
+  margin: 0px;
+  font-size: 14px;
+  color: #fff;
+   @media only screen and (max-width: 1000px) {
+  
+  text-align: center;
+  }
+}
+body .footer .footer1 p b {
+  font-size: 17px;
+  margin: 0px;
+  color: #fff;
+}
+
+body .footer .footer2 p {
+  margin: 0px;
+  font-size: 14px;
+  color: #fff;
+}
+
+body .container .footer form {
+  display: flex;
+  flex-direction: column;
+  width: 27%;
+  gap: 1rem;
+   @media only screen and (max-width: 1000px) {
+    width:100%;
+  align-items: center;
+  }
+}
+body .container .footer label {
+  font-size: 18px;
+  font-weight: 700;
+  color: #fff;
+}
+
+body .container .footer input {
+  font-size: 16px;
+  color: #000;
+  padding: 1rem 2rem;
+  border-radius: 30px;
+  border: 0px;
+  outline: none;
+   @media only screen and (max-width: 1000px) {
+    width:100%;
+  }
+}
+
+body .container .footer .submitButton {
+  background-color: #ef1a2d;
+  border: 2px solid #fff;
+  color: #fff;
+  text-transform: capitalize;
+}
