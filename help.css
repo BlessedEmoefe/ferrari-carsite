@@ -14,6 +14,8 @@ body .container {
   display: flex;
   flex-direction: column;
   width: 100%;
+  min-height: 100vh;
+  justify-content: space-between;
   height: max-content;
   background-color: #eeebeb;
 }
@@ -60,13 +62,13 @@ body .container .navbar .linkSection .innerContainer {
   display: flex;
   justify-content: space-around;
   list-style: none;
-  margin:0;
-  padding:0;
+  margin: 0;
+  padding: 0;
 
-   @media only screen and (max-width: 1000px) {
-   justify-content: space-between;
-   gap:1rem;
-   flex-wrap: wrap;
+  @media only screen and (max-width: 1000px) {
+    justify-content: space-evenly;
+    gap: 1rem;
+    flex-wrap: wrap;
   }
 }
 
@@ -83,63 +85,53 @@ body .container .navbar .linkSection .innerContainer li a:hover {
   text-decoration: underline;
 }
 
+body .container .navbar .linkSection .innerContainer li a:active {
+  font-size: 20px;
+  color: #fff200;
+  text-decoration: none;
+}
+
 body .container .content {
   width: 100%;
   height: max-content;
   padding: 1rem 2rem;
-   @media only screen and (max-width: 1000px) {
-   
+  @media only screen and (max-width: 1000px) {
     padding: 1rem;
   }
 }
 
-body .container .content .page {
-  width: 100%;
-  background-color: transparent;
-}
-body .container .content .page .carCollection {
-  width: 100%;
-  padding-top: 10px;
+body .container .content .help {
+  padding: 20px;
   display: flex;
-  justify-content: space-around;
-  align-items: flex-start;
   flex-wrap: wrap;
+  flex-direction: column;
   gap: 2rem;
-   @media only screen and (max-width: 1000px) {
-   
-    gap: 1rem;
-  }
 }
 
-body .container .content .page .carCollection .card {
-  width: 28%;
-  min-width: 300px;
-  border: 1px solid transparent;
-  background-color: white;
-  padding: 1rem;
-  gap: 1rem;
-  border-radius: 10px;
+body .container .content .help .wrapper {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  /* justify-content: center; */
-  overflow: hidden;
-  box-shadow: 0px 10px 15px 4px rgba(0, 0, 0, 0.1);
-   @media only screen and (max-width: 1000px) {
-   width:45%;
-  }
-   @media only screen and (max-width: 650px) {
-   width:100%;
-  }
+  flex-wrap: wrap;
+  gap: 2rem;
 }
-body .container .content .page .carCollection .card img {
-  height: 40vh;
+
+body .container .content .help h2 {
+  color: #c8102e;
+  font-size: 2.3rem;
+}
+
+body .container .content .help h3 {
+  color: #c8102e;
+  font-size: 1.6rem;
+}
+
+body .container .content .help p {
+  font-size: 14px;
   width: 100%;
-  object-fit: cover;
 }
+
 body .container .content .page .carCollection .card .paragraph {
   font-size: 14px;
-  /* height: 100px; */
   width: 100%;
 }
 
@@ -164,9 +156,9 @@ body .footer .bottom {
   flex-direction: column;
   gap: 2rem;
   align-items: flex-start;
-   @media only screen and (max-width: 1000px) {
-    width:100%;
-  align-items: center;
+  @media only screen and (max-width: 1000px) {
+    width: 100%;
+    align-items: center;
   }
 }
 
@@ -174,9 +166,8 @@ body .footer .footer1 p {
   margin: 0px;
   font-size: 14px;
   color: #fff;
-   @media only screen and (max-width: 1000px) {
-  
-  text-align: center;
+  @media only screen and (max-width: 1000px) {
+    text-align: center;
   }
 }
 body .footer .footer1 p b {
@@ -196,9 +187,9 @@ body .container .footer form {
   flex-direction: column;
   width: 27%;
   gap: 1rem;
-   @media only screen and (max-width: 1000px) {
-    width:100%;
-  align-items: center;
+  @media only screen and (max-width: 1000px) {
+    width: 100%;
+    align-items: center;
   }
 }
 body .container .footer label {
@@ -214,8 +205,8 @@ body .container .footer input {
   border-radius: 30px;
   border: 0px;
   outline: none;
-   @media only screen and (max-width: 1000px) {
-    width:100%;
+  @media only screen and (max-width: 1000px) {
+    width: 100%;
   }
 }
 

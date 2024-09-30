@@ -1,0 +1,118 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+header {
+    background-color: #c8102e; /* Ferrari red */
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+main {
+    padding: 20px;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+h2 {
+    color: #c8102e; /* Ferrari red */
+}
+
+/* About Page Styles */
+.about {
+    background-image: url('ferrari-background.jpg'); /* Example background image */
+    background-size: cover;
+    color: white;
+    padding: 40px;
+    border-radius: 10px;
+}
+
+/* Product Page Styles */
+.product {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.product-card {
+    background-color: white;
+    border: 2px solid #c8102e;
+    border-radius: 10px;
+    width: 300px;
+    margin: 20px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.product-card h3 {
+    color: #c8102e;
+}
+
+/* Ratings Page Styles */
+.ratings {
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.rating-item {
+    margin: 10px 0;
+}
+
+/* Community Page Styles */
+.community {
+    text-align: center;
+}
+
+.community-events {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+/* Policy Page Styles */
+.policy {
+    background-color: #c2c2c2;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+/* Help Page Styles */
+.help {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+}
