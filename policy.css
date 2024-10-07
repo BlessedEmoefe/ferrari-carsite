@@ -66,7 +66,7 @@ body .container .navbar .linkSection .innerContainer {
   padding:0;
 
    @media only screen and (max-width: 1000px) {
-   justify-content: space-between;
+   justify-content: space-evenly;
    gap:1rem;
    flex-wrap: wrap;
   }
@@ -95,11 +95,38 @@ body .container .content {
   }
 }
 
-body .container .content .page .carCollection .card .paragraph {
-  font-size: 14px;
-  /* height: 100px; */
-  width: 100%;
+
+body .container .content .policy {
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  gap: 0.5rem;
 }
+
+body .container .content .policy .wrapper {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+body .container .content .policy h2 {
+  color: #c8102e;
+  font-size: 2.3rem;
+}
+
+body .container .content .policy h3 {
+  color: #c8102e;
+  font-size: 1.6rem;
+}
+
+body .container .content .policy p {
+  font-size: 14px;
+  width: 100%;
+  margin-bottom: 1.5rem;
+}
+
 
 body .footer {
   width: 100%;

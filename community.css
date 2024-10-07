@@ -66,7 +66,7 @@ body .container .navbar .linkSection .innerContainer {
   padding:0;
 
    @media only screen and (max-width: 1000px) {
-   justify-content: space-between;
+   justify-content: space-evenly;
    gap:1rem;
    flex-wrap: wrap;
   }
@@ -93,6 +93,51 @@ body .container .content {
    
     padding: 1rem;
   }
+}
+
+
+body .container .content .community {
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  gap: 2rem;
+  
+}
+
+body .container .content .community h2 {
+  color: #c8102e;
+  font-size: 2.2rem;
+}
+body .container .content .community .wrapper {
+  display: flex;
+  justify-content: space-between;
+   flex-direction: column;
+  flex-wrap: wrap;
+  gap:2rem;
+  
+}
+
+body .container .content .community .community-events {
+  background-color: white;
+  border: 2px solid #c8102e;
+  border-radius: 10px;
+  width: 300px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+   @media only screen and (max-width: 700px) {
+   width: 100%;
+  }
+}
+body .container .content .community .product-card h3 {
+  color: #c8102e; 
+  font-size: 2rem;
+}
+
+body .container .content .product .product-card p {
+  font-size: 14px;
+  width: 100%;
 }
 
 body .container .content .page .carCollection .card .paragraph {

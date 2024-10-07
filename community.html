@@ -1,42 +1,81 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title>Ferrari Community</title>
-</head>
-<body>
-    <header>
-        <h1>Ferrari Community</h1>
-        <nav>
-            <ul>
-                <li><a href="about.html">About</a></li>
-                <li><a href="product.html">Product</a></li>
-                <li><a href="ratings.html">Ratings</a></li>
-                <li><a href="community.html">Community</a></li>
-                <li><a href="policy.html">Policy</a></li>
-                <li><a href="help.html">Help</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main class="community">
-        <h2>Join the Ferrari Family</h2>
-        <p>Connect with fellow enthusiasts and share your passion for Ferrari.</p>
-        <h3>Upcoming Events</h3>
-        <div class="community-events">
-            <div>
-                <h4>Ferrari Meet-up 2024</h4>
-                <p>Join us for an exciting day of cars, food, and fun!</p>
-            </div>
-            <div>
-                <h4>Track Day Experience</h4>
-                <p>Experience the thrill of driving a Ferrari on the track!</p>
-            </div>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="community.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="navbar">
+        <div class="logoSection">
+          <img class="logo" src="./logo.png" alt="logo" />
         </div>
-    </main>
-    <footer>
-        <p>&copy; 2024 Ferrari. All rights reserved.</p>
-    </footer>
-</body>
+
+        <div class="linkSection">
+          <ul class="innerContainer">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about">About</a></li>
+            <li><a href="products.html">Product</a></li>
+            <li><a href="ratings.html">Ratings</a></li>
+            <li><a href="#">Community</a></li>
+            <li><a href="policy.html">Policy</a></li>
+            <li><a href="help.html">Help</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="content">
+        <main class="community">
+
+            <div class="wrapper">
+
+                <h2>Join the Ferrari Family</h2>
+                <p>
+                  Connect with fellow enthusiasts and share your passion for Ferrari.
+                </p>
+            </div>
+          <h3>Upcoming Events</h3>
+          <div class="community-events">
+            <div>
+              <h4>Ferrari Meet-up 2024</h4>
+              <p>Join us for an exciting day of cars, food, and fun!</p>
+            </div>
+            <div>
+              <h4>Track Day Experience</h4>
+              <p>Experience the thrill of driving a Ferrari on the track!</p>
+            </div>
+          </div>
+        </main>
+      </div>
+      <div class="footer">
+        <div class="bottom">
+          <div class="footer1">
+            <p>
+              WE BELIEVE IN THE POWER OF INNOVATION.OUR BRAND,OUR
+              PRIDE...........<b>FERRARI</b>
+            </p>
+          </div>
+          <div class="footer2">
+            <p>&copy; 2024 Ferrari. All rights reserved.</p>
+          </div>
+        </div>
+        <form>
+          <label>Contact Us</label>
+          <input type="text" placeholder="send us a message" />
+          <input type="submit" value="submit" class="submitButton" />
+        </form>
+      </div>
+    </div>
+  </body>
 </html>
